@@ -199,7 +199,7 @@ header {
     justify-content: space-between;
     grid-template-columns: auto auto;
     background-color: rgb(0 0 0 / 55%);
-    background-image: url("https://cierval.es/wp-content/uploads/2020/10/imagen-trading-1140x624.jpg");
+    background-image: url("src/images/fondo.jpg");
     background-blend-mode: overlay;
 }
 
@@ -237,7 +237,7 @@ header {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
-    background-image: url("https://cierval.es/wp-content/uploads/2020/10/imagen-trading-1140x624.jpg");
+    background-image: url("src/images/fondo.jpg");
     background-blend-mode: overlay;
 }
 
@@ -277,34 +277,34 @@ header {
             background-color: rgba(0, 0, 0, 10%);
     }
     .divisas div:nth-child(1) {
-        background-image: url("https://www.infotechnology.com/files/image/96/96272/607d7ab2f27e2.jpg");
+        background-image: url("src/images/btc.jpg");
     }
     .divisas div:nth-child(2) {
-        background-image: url("https://libertex.org/sites/default/files/styles/blog_detail_hero/public/blog/778614103-min_0.jpg");
+        background-image: url("src/images/eth.jpg");
     }
     .divisas div:nth-child(3) {
-        background-image: url("https://www.criptonoticias.com/wp-content/uploads/2018/09/Litecoin-Imagen-768x512.jpg");
+        background-image: url("src/images/ltc.jpg");
     }
     .divisas div:nth-child(4) {
-        background-image: url("https://thecoinshark.net/uploads/750x500/2021/10/solana-hits-new-all-time-high,-overtaking-ripple-s-capitalization.jpg");
+        background-image: url("src/images/sol.jpg");
     }
     .divisas div:nth-child(5) {
-        background-image: url("https://i0.wp.com/criptotendencia.com/wp-content/uploads/2021/08/Cardano-ADA-se-dispara-a-nuevos-maximos-%C2%BFque-sucede-%C2%BFhacia-donde-va.jpg");
+        background-image: url("src/images/ada.jpg");
     }
     .divisas div:nth-child(6) {
-        background-image: url("https://www.crypto-news-flash.com/wp-content/uploads/2019/06/Stanslavs-ZCash-1000x600.jpg");
+        background-image: url("src/images/zec.webp");
     }
     .divisas div:nth-child(7) {
-        background-image: url("https://storage.googleapis.com/contzilla/5XF6FLBWNOMUgMN5ZM3G2stvld6WColnBb9tCIpR.jpeg");
+        background-image: url("src/images/bch.jpeg");
     }
     .divisas div:nth-child(8) {
-        background-image: url("https://www.cronista.com/files/image/341/341543/60f440653b98d.jpg");
+        background-image: url("src/images/usdt.jpg");
     }
     .divisas div:nth-child(9) {
-        background-image: url("https://www.criptonoticias.com/wp-content/uploads/2021/04/estabilidad-precio-stablecoins-dai-mercado-criptomonedas.jpg");
+        background-image: url("src/images/dai.jpg");
     }
     .divisas div:nth-child(10) {
-        background-image: url("https://resizer.glanacion.com/resizer/hv7xQi1N01zfC01BXZ6A66_XiSA=/879x586/smart/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/QHY6MAYYVRAEDJADQITEF725Q4.jpg");
+        background-image: url("src/images/usd.jpg");
     }
 
         /* Youtube */
