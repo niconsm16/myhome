@@ -96,46 +96,66 @@ header {
     list-style-type: none;
     font-family: 'Anton', sans-serif;
     text-align: center;
-    transition: border-bottom .2s;
-    -webkit-transition: border-bottom .2s;
-    -moz-transition: border-bottom .2s;
-    -ms-transition: border-bottom .2s;
-    -o-transition: border-bottom .2s;
     cursor: pointer;
-    border-bottom: 0px solid black;
     padding-bottom: 27px;
+ 
 }
 /*
 .menu ul li:hover {
     padding-bottom: 27px;
 }*/
 
+.border-gradient {
+        border-bottom: 2px solid black;
+        border-image-slice: 1;
+        border-width: 2px;
+
+}
+.menu ul li:nth-child(1),
+.menu ul li:nth-child(2),
+.menu ul li:nth-child(3),
+.menu ul li:nth-child(4),
+.menu ul li:nth-child(5) {
+    border-image-source: linear-gradient(90deg, rgba(28, 205, 3, 0) 0%, rgba(211, 255, 0, 0) 100%);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.border-gradient:hover {
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+}
+
 .menu ul li:nth-child(1):hover {
     /* border-right: 2px solid rgb(5, 203, 5); */
-    border-bottom: 2px solid rgb(5, 203, 5);
+    border-image-source: linear-gradient(90deg, rgba(28, 205, 3, 1) 0%, rgba(211, 255, 0, 1) 100%);
     /* box-shadow: 5px 4px 8px rgba(5, 203, 5, 0.471); */
-}
+} 
 
 .menu ul li:nth-child(2):hover {
     /* border-right: 2px solid rgb(203, 5, 5); */
-    border-bottom: 2px solid rgb(203, 5, 5);
+    border-image-source:linear-gradient(90deg, rgba(201, 4, 4, 1) 0%, rgb(104, 0, 0) 100%);
     /* box-shadow: 5px 4px 8px rgba(203, 5, 5, 0.471); */
 }
 
 .menu ul li:nth-child(3):hover {
     /* border-right: 2px solid rgb(255, 255, 255); */
-    border-bottom: 2px solid rgb(190, 203, 5);
+    border-image-source: linear-gradient(90deg, rgba(255, 252, 0, 1) 0%, rgba(181, 145, 0, 1) 100%);
     /* box-shadow: 5px 4px 8px rgba(255, 255, 255, 0.471); */
 }
 
 .menu ul li:nth-child(4):hover {
     /* border-right: 2px solid rgb(190, 203, 5); */
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(82, 82, 82) 100%);
     /* box-shadow: 5px 4px 8px rgba(190, 203, 5, 0.471); */
 }
 .menu ul li:nth-child(5):hover {
     /* border-right: 2px solid rgb(190, 203, 5); */
-    border-bottom: 2px solid rgb(97, 5, 203);
+    border-image-source:linear-gradient(to left, #743ad5, #d53a9d);
     /* box-shadow: 5px 4px 8px rgba(190, 203, 5, 0.471); */
 }
 
@@ -187,6 +207,7 @@ header {
         font-weight: bold;
         padding-right: 1em;
     }
+
 
 /* Seccion Finanzas */
 
