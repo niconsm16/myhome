@@ -1,15 +1,23 @@
 let dolarblue
 let ofidolar
 
-fetch('https://api.bluelytics.com.ar/v2/latest')
-    .then((response) => response.json())
-    .then((a) => {
-        dolarblue = parseFloat(a['blue'].value_sell)
-        ofidolar = parseFloat(a['oficial'].value_sell)
 
-        document.getElementById('dolblue').innerHTML = `Blue: $${dolarblue}`
-        document.getElementById('dolofi').innerHTML = `Oficial: $${ofidolar}`
-    })
+
+const dolar = () => {
+    fetch('https://api.bluelytics.com.ar/v2/latest')
+        .then((response) => response.json())
+        .then((a) => {
+            dolarblue = parseFloat(a['blue'].value_sell)
+            ofidolar = parseFloat(a['oficial'].value_sell)
+
+            document.getElementById('dolblue').innerHTML = `Blue: $${dolarblue}`
+            document.getElementById('dolofi').innerHTML = `Oficial: $${ofidolar}`
+        })
+}; dolar()
+
+setInterval(() => {
+    dolar()
+}, 6000000)
 
 // Binance API, Id par, array del Api, Id del ARS
 let criptos = [
