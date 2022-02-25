@@ -33,12 +33,15 @@ function listCriptos(api) {
     })
 }
 
-setTimeout(() => {
+const criptpud = setTimeout(() => {
     fetch('https://api.binance.com/api/v3/ticker/price')
         .then((response) => response.json())
         .then((a) => {
             listCriptos(a)
         })
-}, 450);
+}, 600);
 
 
+setInterval(() => {
+    criptpud()
+}, 300000);
