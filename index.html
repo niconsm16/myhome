@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <!-- Moment Js -->
+
+
+    <title>My Trading Home</title>
 </head>
 
 <body>
@@ -29,8 +33,9 @@
 
         </div>
         <div class="clima">
-            <h2>4:05</h2>
-            <h3>Ciudad Autonoma de Buenos Aires</h3>
+            <h2 id='hora'>4:05</h2>
+            <h3 id="fecha">fecha</h3>
+            <h3>ciudad</h3>
             <p>Temperatura: 22° - Térmica: 24°</p>
         </div>
     </header>
@@ -58,53 +63,53 @@
             <div class="divisas" id="divisas">
                 <div>
                     <h2>Bitcoin (btc)</h2>
-                    <h3>USD: $45645</h3>
-                    <p>ARS: $4459972.22</p>
+                    <h3 id="btcusdt"></h3>
+                    <p id="btcusdtars"></p>
                 </div>
                 <div>
                     <h2>ethereum (eth)</h2>
-                    <h3>USD: $3545</h3>
-                    <p>ARS: $737360</p>
+                    <h3 id="ethusdt"></h3>
+                    <p id="ethusdtars"></p>
                 </div>
                 <div>
                     <h2>litecoin (ltc)</h2>
-                    <h3>USD: $142</h3>
-                    <p>ARS: $29536</p>
+                    <h3 id="ltcusdt"></h3>
+                    <p id="ltcusdtars"></p>
                 </div>
                 <div>
                     <h2>solana (sol)</h2>
-                    <h3>USD: $150</h3>
-                    <p>ARS: $31200</p>
+                    <h3 id="solusdt"></h3>
+                    <p id="solusdtars"></p>
                 </div>
                 <div>
                     <h2>cardano (ada)</h2>
-                    <h3>USD: $1.36</h3>
-                    <p>ARS: $282.88</p>
+                    <h3 id="adausdt"></h3>
+                    <p id="adausdtars"></p>
                 </div>
                 <div>
                     <h2>zetacash (zec)</h2>
-                    <h3>USD: $138</h3>
-                    <p>ARS: $28458</p>
+                    <h3 id="zecusdt"></h3>
+                    <p id="zecusdtars"></p>
                 </div>
                 <div>
                     <h2>bitcoin cash (bch)</h2>
-                    <h3>USD: $382</h3>
-                    <p>ARS: $79456</p>
+                    <h3 id="bchusdt"></h3>
+                    <p id="bchusdtars"></p>
                 </div>
                 <div>
                     <h2>usdt</h2>
-                    <h3>USD: $1.09</h3>
-                    <p>ARS: $214</p>
+                    <h3 id="usdt"></h3>
+                    <p id="usdtars"></p>
                 </div>
                 <div>
                     <h2>dai</h2>
-                    <h3>USD: $1.06</h3>
-                    <p>ARS: $212</p>
+                    <h3 id="daiusdt"></h3>
+                    <p id="daiusdtars"></p>
                 </div>
                 <div>
                     <h2>dolar</h2>
-                    <h3>oficial: $104</h3>
-                    <p>blue: $208</p>
+                    <h3 id="dolofi"></h3>
+                    <p id="dolblue"></p>
                 </div>
             </div>
         </div>
@@ -221,6 +226,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/moment-with-locales.min.js"></script>
+    <script src="fecha.js"></script>
     <script src="cripto.js"></script>
 </body>
 
