@@ -1,9 +1,9 @@
 function fecha() {
-    setTimeout(() => {
-        moment.locale('es');
-        document.getElementById('hora').innerHTML = moment().format('LT');
-        document.getElementById('fecha').innerHTML = moment().format('LL');
-    }, 10);
+
+    moment.locale('es');
+    document.getElementById('hora').innerHTML = moment().format('LT');
+    document.getElementById('fecha').innerHTML = moment().format('LL');
+
 } fecha()
 
 function clima() {
@@ -21,5 +21,5 @@ function clima() {
 setInterval(() => {
     fecha()
     clima()
-}, 60000);
+}, 30000);
 
