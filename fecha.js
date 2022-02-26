@@ -21,5 +21,5 @@ function clima() {
 setInterval(() => {
     fecha()
     clima()
-}, 30000);
+}, 60000);
 
