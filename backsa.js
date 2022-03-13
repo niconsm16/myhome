@@ -13,6 +13,6 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
                     ? climback.style.backgroundImage = `url(${a.url})`
                     : climback.style.backgroundImage = 'none'
             })
-        }, 2500);
+        }, 3500);
     })
 
