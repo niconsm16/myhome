@@ -19,7 +19,7 @@ function clima() {
                 document.getElementById('clima').innerHTML = `Temp: ${a.main.temp} - S. Térmica: ${a.main.feels_like}`
                 document.getElementById('flag').innerHTML = `<img src="https://flagcdn.com/16x12/${(a.sys.country).toLowerCase()}.webp" />`
             })
-    }, 3500);
+    }, 5000);
 } clima()
 
 setInterval(() => {
