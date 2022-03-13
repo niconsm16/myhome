@@ -15,30 +15,45 @@
 </head>
 
 <body>
+    <div class="logo header">
+        <h2>El inicio del</h2>
+        <h1>Trader</h1>
+    </div>
+    <div class="menu header">
 
-    <header>
-        <div class="logo">
-            <h2>El inicio del</h2>
-            <h1>Trader</h1>
-        </div>
-        <div class="menu">
+        <ul>
+            <li class="border-gradient">Finanzas</li>
+            <li class="border-gradient">Youtube</li>
+            <li class="border-gradient">Promos</li>
+            <li class="border-gradient">Noticias</li>
+            <li class="border-gradient">Figuras</li>
+            <li class="border-gradient">Presupuesto</li>
+            <li class="convertdiv">Ingresa el monto a convertir: <input type="number" id="conversion" name="Conversion">
+                <select name="Moneda" id="conversion">
+                    <option>BTC (Bitcoin)</option>
+                    <option>ETH (Ethereum)</option>
+                    <option>LTC (Litecoin)</option>
+                    <option>SOL (Solana)</option>
+                    <option>ADA (Cardano)</option>
+                    <option>USDT</option>
+                    <option>DAI</option>
+                    <option>USD</option>
+                    <option>ARS</option>
+                </select>
+            </li>
+        </ul>
 
-            <ul>
-                <li class="border-gradient">Finanzas</li>
-                <li class="border-gradient">Youtube</li>
-                <li class="border-gradient">Promos</li>
-                <li class="border-gradient">Noticias</li>
-                <li class="border-gradient">Figuras</li>
-            </ul>
-
-        </div>
-        <div class="clima">
-            <h2 id="hora"></h2>
-            <h3 id="fecha"></h3>
+    </div>
+    <div class="clima header">
+        <h2 id="hora"></h2>
+        <h3 id="fecha"></h3>
+        <div class="cityflag">
             <h3 id="ciudad"></h3>
-            <p id="clima"></p>
+            <div id="flag"></div>
         </div>
-    </header>
+        <p id="clima"></p>
+    </div>
+
 
     <main>
 
@@ -46,7 +61,7 @@
         <div class="finanzas-container">
             <div class="title-box finanzas">
                 <span class="title">Finanzas</span>
-                <label>Ingresa el monto a convertir: <input type="text" id="conversion" name="Conversion">
+                <label>Ingresa el monto a convertir: <input type="number" id="conversion" name="Conversion">
                     <select name="Moneda" id="conversion">
                         <option>BTC (Bitcoin)</option>
                         <option>ETH (Ethereum)</option>
@@ -214,10 +229,6 @@
             </div>
         </div>
 
-
-
-
-
     </main>
 
     <footer>
@@ -226,10 +237,11 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="moment-with-locales.min.js"></script>
+    <script src="locate.js"></script>
     <script src="fecha.js"></script>
     <script src="cripto.js"></script>
+    <script src="backsa.js"></script>
 </body>
 
 </html>
