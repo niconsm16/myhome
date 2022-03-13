@@ -7,11 +7,14 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then((a) => {
         setTimeout(() => {
 
+
+
             mediaqueryList.addEventListener('change', () => {
+
                 mediaqueryList.matches
                     ? climback.style.backgroundImage = `url(${a.url})`
                     : climback.style.backgroundImage = 'none'
             })
-        }, 5000);
+        }, 100);
     })
 
